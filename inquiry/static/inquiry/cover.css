@@ -9,3 +9,8 @@ body {
 .logoname {
   font-family: sans-serif;
 }
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
