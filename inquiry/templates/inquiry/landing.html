@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-pause="false" data-interval="9000" data-ride="carousel">
   <ol style="color: black" class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -14,20 +14,21 @@
         <img class="d-block w-100" src="/static/inquiry/skullabove.svg" height="200px" width="200px" alt="First slide">
         <h2 class="display-4">Automate Your Daily Redundancy.</h2>
         <p style="font-size: 25px;color: red" class="lead">A 5 minute daily task could cost 27 days of your life. Let us change that.</p>
-        <p class="lead">We build software to save your time.</p>
+        <p class="lead">We build software to save you time.</p>
         <p class="lead">
           <a class="btn btn-secondary btn-lg" href="#" role="button">Learn More</a>
+          <a class="btn btn-secondary btn-lg" href="{% url 'inquiry' %}" role="button">Contact Us</a>
         </p>
-        </div>
+      </div>
     </div>
     <div class="carousel-item">
       <div class="jumbotron bg-white text-center">
         <img class="d-block w-100" src="/static/inquiry/skullabove.svg" height="200px" width="200px" alt="First slide">
-        <h2 class="display-4">Automate Your Daily Redundancy.</h2>
-        <p style="font-size: 25px;color: red" class="lead">A 5 minute daily task could cost 27 days of your life. Let us change that.</p>
-        <p class="lead">We build software to save your time.</p>
+        <h2 class="display-4">Do You Manage Projects?</h2>
+        <p style="font-size: 25px;color: red" class="lead">We have built a project management platform to help.</p>
+        <p class="lead">Create an account, and start using it!</p>
         <p class="lead">
-          <a class="btn btn-secondary btn-lg" href="#" role="button">Learn More</a>
+          <a class="btn btn-secondary btn-lg" href="#" role="button">Project Management Site</a>
         </p>
         </div>
     </div>
