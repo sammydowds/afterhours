@@ -19,6 +19,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.inquiry, name="inquiry"),
+    path('tasks', views.inquiry, name="inquiry"),
+    path('', views.landing, name="landing"),
 
 ]
