@@ -25,7 +25,7 @@ SECRET_KEY = 'u8&-a4i8uz9a@u+q+##6)o47-#lh&f)d3#n^*mj7c2#f33d0jk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['www.ahsoftware.io']
 
 
 # Application definition
