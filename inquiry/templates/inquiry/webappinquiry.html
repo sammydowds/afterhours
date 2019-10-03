@@ -1,0 +1,28 @@
+{% extends 'inquiry/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+      <div style="text-align: center;" class="row justify-content-center">
+        <div class="jumbotron bg-white">
+          <h1 class="display-4"><img src="/static/inquiry/skull.svg" height="100" width="100" class="d-inline-block align-top" alt="">
+          </h1>
+          <br>
+          <h1>We build web apps in days.</h1>
+          <p style="font-size: 20px;" class="lead"> Shoot us a message, and lets collaborate on building your web presence. Lets build the future together. </p>
+          <p style="color: red; font-size: 18px;" class="lead"> Let Us Help, Fill Out the Form Below. Save Your Time. </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <p style="text-align: center;font-size: 30px;" class="lead">Lets build together. What is your Web App idea?</p>
+            <form method="POST">
+              {% csrf_token %}
+              {{ form|crispy }}
+              <button type="submit" class="btn btn-success">Submit Inquiry</button>
+            </form>
+        </div>
+      </div>
+
+{% endblock %}

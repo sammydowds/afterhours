@@ -20,6 +20,8 @@ from . import views
 
 urlpatterns = [
     path('', views.landing, name="landing"),
-    path('tasks/', views.inquiry, name="inquiry"),
-    path('success/', views.success, name="sucess")
+    path('taskinquiry/', views.taskinquiry, name="taskinquiry"),
+    path('webappinquiry/', views.webappinquiry, name="webappinquiry"),
+    path('success/', views.success, name="sucess"),
+    path('failure/', views.failure, name="failure")
 ]
