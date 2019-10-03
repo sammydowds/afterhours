@@ -14,7 +14,7 @@ def taskinquiry(request):
         return render(request, 'inquiry/taskinquiry.html', {'form': form})
         # form = InquiryForm()
     else:
-        form = InquiryForm(request.POST)
+        form = TaskInquiryForm(request.POST)
         if form.is_valid():
             task = form.cleaned_data['task']
             email = form.cleaned_data['email']
@@ -34,7 +34,7 @@ def webappinquiry(request):
         return render(request, 'inquiry/webappinquiry.html', {'form': form})
         # form = InquiryForm()
     else:
-        form = InquiryForm(request.POST)
+        form = WebAppInquiryForm(request.POST)
         if form.is_valid():
             app = form.cleaned_data['app']
             email = form.cleaned_data['email']
