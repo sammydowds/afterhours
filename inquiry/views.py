@@ -21,7 +21,7 @@ def taskinquiry(request):
             duration = form.cleaned_data['duration']
             try:
                 #TODO impliment sending email here, probably build instance of EmailMessage
-                send_mail(task, task + duration + 'My email is: ' + email, settings.EMAIL_HOST_USER,[settings.EMAIL_HOST_USER])
+                send_mail('Task Inquiry', 'Description of my task:' + task + 'Duration it takes me per week:' + duration + 'My email is: ' + email, settings.EMAIL_HOST_USER,[settings.EMAIL_HOST_USER])
             except BadHeaderError:
                 #TODO return error here if header is bad
              return redirect('failure')
