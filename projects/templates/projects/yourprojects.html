@@ -1,7 +1,12 @@
-{% extends 'inquiry/base.html' %}
+{% extends 'projects/base.html' %}
 
 {% block content %}
 
-<div>YOUR Project Landing Page</div>
+<div
+
+<div id="accordion">
+  <!-- TODO add in loop for projects and create unique ID's for each button -->
+  {% include 'projects/projectcard.html' %}
+</div>
 
 {% endblock %}
